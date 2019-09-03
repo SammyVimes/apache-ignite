@@ -81,6 +81,10 @@ public class ClientRequestHandler implements ClientListenerRequestHandler {
         return false;
     }
 
+    /** {@inheritDoc} */
+    @Override public boolean isCancellationSupported() {
+        return false;
+    }
 
     /** {@inheritDoc} */
     @Override public void registerRequest(long reqId, int cmdType) {
